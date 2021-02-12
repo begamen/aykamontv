@@ -1,0 +1,77 @@
+<article class="blog-single-post lightgallery">
+  <a href="{{file_url(content.field_image[ '#items'].entity.uri.value)}}" class="blog-single-featured-image lg-trigger" data-exthumbnail="assets/img/blog/list/blog-1.jpg">
+									{{ content.field_image }}
+								</a>
+								<!-- End blog single featured image -->
+
+								<!-- Begin blog single heading -->
+								<div class="blog-single-post-heading">
+									<h1 class="blog-single-post-title">{{ label }}</h1>
+									<div class="blog-single-post-category">{{ content.field_tags }}</div>
+								</div>
+								<!-- End blog single heading -->
+
+								<!-- Begin blog single post inner -->
+								<div class="blog-single-post-inner">
+
+									<!-- Begin blog single attributes -->
+									<div class="blog-single-attributes">
+										<div class="row">
+											<div class="col-sm-8">
+
+												<!-- Begin blog single meta -->
+												<div class="blog-single-meta-wrap">
+
+													<!-- Blog single author avatar -->
+													{{ author_picture }}
+
+													<div class="blog-single-meta">
+														<div class="article-author">{% trans %}by: {{ author_name }}{% endtrans %}</div>
+														<div class="article-time-cat">
+															<span class="article-time">{{ date }}</span>
+														</div>
+													</div>
+
+												</div>
+												<!-- End blog single meta -->
+
+											</div> <!-- /.col -->
+
+											<div class="col-sm-4">
+
+												<!-- Begin blog single links -->
+												<ul class="blog-single-links list-unstyled list-inline">
+													<li>
+														<!-- Begin comments count -->
+														<a href="#blog-post-comments" class="blog-single-comment-count sm-scroll" title="Read the comments"><i class="fa fa-comment-o"></i> {{ comment_count }}</a>
+														<!-- End comments count -->
+													</li>
+													<li>
+														
+													</li>
+												</ul>
+												<!-- End blog single links -->
+
+											</div> <!-- /.col -->
+										</div> <!-- /.row -->
+									</div>
+									<!-- End blog single attributes -->
+
+									<!-- Begin post content -->
+									<div class="post-content">
+
+										{{ content.body }}
+
+										
+
+										
+										</div> <!-- /.col -->
+									
+									
+
+									
+{{ content.comment }}
+								</div>
+								
+
+</article> 
